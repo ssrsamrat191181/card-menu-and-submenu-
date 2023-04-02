@@ -1,0 +1,231 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    
+    nav{
+        background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    nav ul li{
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 20px;
+    }
+     nav ul li a{
+      
+color: white;
+padding: 15px 20px;
+display: block;
+transition: 0.25s;
+position: relative;
+z-index: 1;
+     }
+
+nav ul li a::before{
+    content: '';
+   width: 100%;
+   height: 0%;
+   position: absolute;
+
+background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+top: 0;
+left: 0;
+z-index: -1;
+transition: 1s;
+}
+
+nav ul li:hover a::before{
+    height: 50%;
+    }
+    
+
+nav ul li a::after{
+    content: '';
+   width: 100%;
+   height: 0%;
+   position: absolute;
+
+background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+bottom: 0;
+left: 0;
+z-index: -1;
+transition: 1s;
+}
+
+
+nav ul li:hover a::after{
+height: 50%;
+}
+
+
+nav ul li ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+nav ul li ul li{
+    display: block;
+}
+
+nav ul li:hover ul{
+visibility: visible;
+opacity: 1;
+margin-top: 0;
+margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+nav ul li:hover a{
+    background: #1a2a6c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+h1{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    }
+    .card{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: center;
+    }
+    
+    .contents{
+    font-weight: 1200;
+    font-size: xx-large;
+    }
+    
+    .earlylife h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkblue !important;
+    }
+    .earlylife{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    width: 300px;
+    height: 450px;
+    background-image: url(../images/young.jpg);
+    margin: 25px auto;
+    padding: 20px 10px;
+    text-align: justify;
+    background-position: center center;
+    display: inline-block;
+    border: 2px solid black;
+    
+    }
+    a {
+    
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        display: inline-block;
+        padding: 15px 25px;
+    }
+    .boys h2{
+        font-size: xx-large;
+        color: white;
+    }
+    .boys{
+        
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    width: 300px;
+    height: 450px;
+    background-image: url(../images/kid\ messi.jpg);
+    margin: 25px auto;
+    padding: 20px 10px;
+    text-align: justify;
+    background-position: center center;
+    display: inline-block;
+    border: 2px solid black;}
+    .fcb h2{
+        font-size: xx-large;
+        color: white;
+    }
+    
+    .fcb{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    width: 300px;
+    height: 450px;
+    background-image: url(../images/leo5.jpg);
+    margin: 25px auto;
+    padding: 20px 10px;
+    text-align: justify;
+    background-position: center center;
+    display: inline-block;
+    border: 2px solid black;
+    }
+    .awards h2{
+        font-size: xx-large;
+        color: white;
+    }
+    .awards{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 800;
+        width: 300px;
+        height: 450px;
+        background-image: url(../images/ia.jpg);
+        margin: 25px auto;
+        padding: 20px 10px;
+        text-align: justify;
+        background-position: top center;
+        display: inline-block;
+        border: 2px solid black;
+        }
+       .more h2{
+            font-size: xx-large;
+            color: white;
+        }
+        .more{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 800;
+            background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+            margin: 25px auto;
+            padding: 20px 10px;
+            text-align: justify;
+            background-size: cover;
+            display: inline-block;
+            border: 2px solid black;
+            }
